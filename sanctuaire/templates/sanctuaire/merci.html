@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenue | Sanctuaire de Vie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Jost',sans-serif;background:#0f1f14;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 24px}
+    .wrap{text-align:center;max-width:480px}
+    .rule{width:40px;height:1px;background:#B8962E;margin:0 auto 32px}
+    .label{color:#3d6b50;font-size:10px;letter-spacing:5px;margin-bottom:32px}
+    h1{font-family:'Cormorant Garamond',serif;font-size:52px;color:#F9F6F1;font-weight:300;line-height:1.1;margin-bottom:20px}
+    h1 em{color:#B8962E;font-style:italic}
+    .sub{font-size:13px;color:#7a9e85;font-weight:300;line-height:1.9;margin-bottom:48px;letter-spacing:.5px}
+    .btn-wa {
+      display: inline-block;
+      background: #B8962E;
+      color: #0f1f14;
+      text-decoration: none;
+      padding: 20px 48px;
+      font-family: 'Jost', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 5px;
+      border: 3px solid #e8c96a;
+      outline: 4px solid #B8962E;
+      outline-offset: 3px;
+      transition: all 0.3s ease;
+    }
+    .btn-wa:hover {
+      background: #F9F6F1;
+      color: #0f1f14;
+      border-color: #B8962E;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(184,150,46,0.3);
+    }
+    .btn-wa:active {
+      transform: translateY(1px);
+      box-shadow: none;
+    }
+    .back{display:block;margin-top:32px;font-size:11px;letter-spacing:3px;color:#3d6b50;text-decoration:none}
+    .back:hover{color:#B8962E}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="rule"></div>
+    <div class="label">SANCTUAIRE DE VIE</div>
+    <h1>Tu es<br><em>attendue.</em></h1>
+    <p class="sub">Ton inscription a bien été reçue.<br>Rejoins maintenant notre espace WhatsApp.</p>
+    <a class="btn-wa" href="{{ whatsapp_url }}" target="_blank">REJOINDRE WHATSAPP</a>
+    <a class="back" href="/">← Retour à l'accueil</a>
+  </div>
+</body>
+</html>

@@ -120,7 +120,7 @@ import os
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'sanctuaire' / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'
 
 CSRF_TRUSTED_ORIGINS = ['https://web-production-60ca1.up.railway.app']
 # Default primary key field type

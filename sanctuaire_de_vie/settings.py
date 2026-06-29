@@ -122,7 +122,12 @@ STATICFILES_DIRS = [BASE_DIR / 'sanctuaire' / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'
 
-CSRF_TRUSTED_ORIGINS = ['https://web-production-60ca1.up.railway.app']
+CSRF_TRUSTED_ORIGINS = [
+    'https://sanctuairedevie.up.railway.app',
+    'http://sanctuairedevie.up.railway.app',
+    'https://web-production-60ca1.up.railway.app',
+    'http://web-production-60ca1.up.railway.app',
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 

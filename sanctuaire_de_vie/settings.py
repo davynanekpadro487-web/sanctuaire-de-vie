@@ -120,7 +120,7 @@ import os
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'sanctuaire' / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CSRF_TRUSTED_ORIGINS = [
     'https://sanctuairedevie.up.railway.app',

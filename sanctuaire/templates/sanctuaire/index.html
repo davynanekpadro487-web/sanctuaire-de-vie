@@ -635,6 +635,11 @@
         width: 100%;
       }
     }
+    .btn-rejoindre:active {
+      background-color: #d4af37 !important;
+      transform: scale(0.96) !important;
+      box-shadow: 0 2px 10px rgba(184, 150, 46, 0.6) !important;
+    }
   </style>
 </head>
 <body>
@@ -648,7 +653,13 @@
   </div>
   <h1 class="serif">Sanctuaire<br><em>de Vie</em></h1>
   <p class="hero-sub">30 jours pour activer ta destinée<br>et t'élever à la fréquence de la royauté</p>
-  <button class="btn-hero" onclick="document.getElementById('modal').classList.add('active')">REJOINDRE LE SANCTUAIRE</button>
+  <button class="btn-hero btn-rejoindre" 
+onclick="document.getElementById('modal').classList.add('active')"
+style="background-color: #B8962E; color: #0f1f14; border: 2px solid #B8962E; padding: 1rem 2rem; font-family: 'Jost', sans-serif; font-size: 0.85rem; letter-spacing: 0.15em; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(184, 150, 46, 0.3);"
+onmouseover="this.style.backgroundColor='#d4af37'; this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 20px rgba(184, 150, 46, 0.5)';"
+onmouseout="this.style.backgroundColor='#B8962E'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(184, 150, 46, 0.3)';"
+onmousedown="this.style.transform='scale(0.97)';"
+onmouseup="this.style.transform='scale(1.03)';">REJOINDRE LE SANCTUAIRE</button>
   <p class="hero-price">Programme mensuel · 20 000 FCFA / mois</p>
 </section>
 
